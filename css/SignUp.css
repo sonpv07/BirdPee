@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.Main_SignUp {
+    display: grid;
+    grid-template-rows: 20% 60% 20%;
+    background-color: #76a463;
+    width: 65%;
+    float: left;
+    text-align: center;
+    height: 100%;     
+}
+.container{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+}
+h1 {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    
+}
+.title{
+    color: black;
+    font-size: 70px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+
+}
+.form{
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    height: 20%;
+}
+.inputBox1 input {
+    padding: 9px;
+    width: 50%;
+    margin: 10px 0;
+    
+}
+
+.inputBox2 input {
+    padding: 9px;
+    width: 50%;
+    margin: 10px 0;
+}
+.inputBox3 input {
+    padding: 9px;
+    width: 50%;
+    margin: 10px 0;
+    
+}
+
+.inputBox4 input {
+    padding: 9px;
+    width: 50%;
+    margin: 10px 0;
+}
+.checkbox_container{
+    display: grid;
+    grid-template-columns: 25.5% 74.5%;
+    
+}
+.checkbox{
+    margin-top: 10px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    align-self: start;
+}
+input[type=checkbox]{
+    transform: scale(2);
+    
+}
+.justify{
+    display: grid;
+    grid-template-rows: 23% 40% 37%;
+    height: 200px;
+}
+.inputButton{
+    align-items: baseline;
+}
+.inputButton button{
+    
+    padding: 12px;
+    width: 25%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+
+.image {
+    width: 35%;
+    float: right;
+}
+.image img {
+    width: 99%;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/admin.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="images/logo2.png" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../image/favicon_io/favicon.ico" />
+    <title>Document</title>
+  </head>
+  <body>
+    <c:set value="${sessionScope.USER}" var="user"></c:set>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon"></i>
+        <span class="logo-name">WELCOME BACK, SONPV07</span>
+      </div>
+
+      <div class="user-info">
+        <img src="../images/use.png" alt="" />
+        <h3>Username</h3>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon"></i>
+          <span class="logo-name">BIRDPEE</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="dashboard.html" class="nav-link">
+                <i class="bx bxs-notepad icon"></i>
+                <span class="link">DASHBOARD</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="AdminServlet?type=view" class="nav-link">
+                <i class="bx bxs-spreadsheet icon"></i>
+                <span class="link">CUSTOMERS MANAGEMENT</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="feedbackmanagement.html" class="nav-link">
+                <i class="bx bxs-comment icon"></i>
+                <span class="link">FEEDBACK MANAGEMENT</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="../homepage.html" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">LOGOUT</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <h1>CUSTOMER MANAGEMENT</h1>
+      <div style="padding-top: 40px">
+        <div class="filter-place">
+          <div class="search-bar">
+            <input type="text" placeholder="Find something you need" />
+            <i class="fas fa-solid fa-magnifying-glass"></i>
+          </div>
+          <div class="sort-bar">
+            <p style="font-size: 20px; font-weight: bold; text-align: left">
+              Default<i class="fas fa-solid fa-sort-down"></i>
+            </p>
+            <ul class="options">
+              <li>
+                <a href="#">A <i class="fa-solid fa-arrow-right"></i> Z</a>
+              </li>
+              <li>
+                <a href="#">Z <i class="fa-solid fa-arrow-right"></i> A</a>
+              </li>
+              <li><a href="#">Ascending by Price</a></li>
+              <li><a href="#">Descending by Price</a></li>
+            </ul>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <td>Image</td>
+              <td style="width: 10%">Account ID</td>
+              <td style="width: 8%">Username</td>
+              <td>Password</td>
+              <td>Email</td>
+              <td style="width: 20%">Address</td>
+              <td>Gender</td>
+              <td style="width: 15%">Phone Number</td>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr class="tr">
+              <td><img src="../images/bird1.jpg" alt="" /></td>
+              <td style="width: 10%">S12345</td>
+              <td style="width: 8%">sonpv07</td>
+              <td>12345</td>
+              <td>asd@123</td>
+              <td>123 bdt street Ho Chi Minh City</td>
+              <td>Male</td>
+              <td>098767892</td>
+            </tr>
+
+            <tr>
+              <td><img src="../images/bird1.jpg" alt="" /></td>
+              <td>S12345</td>
+              <td>sonpv07</td>
+              <td>12345</td>
+              <td>asd@123</td>
+              <td>123 bdt street Ho Chi Minh City</td>
+              <td>Male</td>
+              <td>098767892</td>
+            </tr>
+            <tr>
+              <td><img src="../images/bird1.jpg" alt="" /></td>
+              <td>S12345</td>
+              <td>sonpv07</td>
+              <td>12345</td>
+              <td>asd@123</td>
+              <td>123 bdt street Ho Chi Minh City</td>
+              <td>Male</td>
+              <td>098767892</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+          <a href="#">&laquo;</a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">&raquo;</a>
+        </div>
+      </div>
+    </main>
+
+    <section class="overlay"></section>
+
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

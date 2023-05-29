@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 90vh;
+
+}
+
+header {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: #82cd47;
+    height: 10%;
+    width: 100%;
+}
+i.fa-solid.fa-user-gear{
+    font-size: 80px;
+    margin-left: 20px;
+    
+}
+header h1{
+    font-size: 60px;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 0;
+    height: 100px;
+}
+a{
+    
+}
+
+aside h2 {
+    font-size: 40px;
+    margin: 10px;
+    padding: 0;
+}
+
+aside a {
+    font-size: 20px;
+    margin: 10px;
+    padding: 0;
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+.mainInput{
+    margin: 20px;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+    height: 100%;
+    width: 100%;
+}
+.mainInput h2{
+    font-size: 40px;
+}
+.mainInput .inputID p, .mainInput .inputProductName p, .mainInput .inputIMG p, .mainInput .inputInfo p,
+ .mainInput .inputQuantity p,.mainInput .inputPrice p,.mainInput .categories p,.mainInput .freeship p{
+    font-size: 20px;
+ }
+ .mainInput .inputID input, .mainInput .inputProductName input, .mainInput .inputIMG input, .mainInput .inputInfo input,
+ .mainInput .inputQuantity input,.mainInput .inputPrice input,.mainInput .categories select,.mainInput .freeship input{
+    padding: 9px;
+    width: 50%;
+    margin: 0px 0;
+
+ }
+ .freeship{
+    display: grid;
+    grid-template-columns: 7% 7% 84%;
+    height: 30%;
+ }
+ .freeship input{
+    padding: 5px ;
+ }
+ .button{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 50%;
+ }
+ .button button{
+    padding: 5px;
+    width: 50%;
+
+ }
+ button.add{
+    align-self: start;
+    justify-self: end;
+ }

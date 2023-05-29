@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+.Main_Login {
+    display: grid;
+    grid-template-rows: 20% 30% 50%;
+    background-color: #76a463;
+    width: 65%;
+    float: left;
+    text-align: center;
+    height: 100%;     
+}
+
+.image {
+
+    width: 35%;
+    float: right;
+}
+
+.image img {
+
+    width: 99%;
+}
+.container{
+    
+    grid-row-start: 2;
+    grid-row-end: 3;
+    align-self: center;
+}
+
+h1 {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    
+}
+.title{
+    color: black;
+    font-size: 70px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+
+}
+
+.form {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    height: 20%;
+}
+
+.inputBox1 input {
+    padding: 9px;
+    width: 50%;
+    margin: 10px 0;
+    
+}
+
+.inputBox2 input {
+    padding: 9px;
+    width: 50%;
+    margin: 10px 0;
+}
+
+.inputButton button {
+    padding: 9px;
+    width: 50%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.linkContainer {
+    
+    display: grid;
+    grid-template-columns: 25% 30% 20% 29%;
+}
+a{
+    text-decoration:none;
+}
+
+.signUp {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: start;
+    align-self: start;
+}
+
+.forgot {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    justify-self: end;
+    align-self: end;
+}
+
+.line{
+    display: grid;
+    grid-template-columns: 25% 22% 6% 22% 25%;
+    align-items: center;
+}
+.line::before {
+    content: "";
+    height: 1px;
+    background-color: #fffefe;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    
+}
+.line::after{
+    content: "";
+    height: 1px;
+    background-color: #fffefe;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.line tx{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}   
+.linkbutton{
+    display: grid;
+    grid-template-columns: 24% 23% 6% 23% 24% ;
+    height: 100%;
+}
+.linkbutton1{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+.linkbutton1 button{
+    width: 90%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: blue;
+   color: white;
+   margin: 5px 0;
+   cursor: pointer;
+}
+.linkbutton2{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+.linkbutton2 button{
+    width: 90%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+}
+    

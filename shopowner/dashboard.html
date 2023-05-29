@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/shopowner.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="../images/logo2.png" />
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <c:set value="${sessionScope.USER}" var="user"></c:set>
+    <nav>
+      <div class="logo">
+        <i class="bx bx-menu menu-icon" style="color: #6c7293"></i>
+        <span class="logo-name" style="color: white"
+          >WELCOME BACK, SONPV07</span
+        >
+      </div>
+
+      <div class="user-info">
+        <img src="../images/use.png" alt="" />
+        <h3>Username</h3>
+      </div>
+
+      <div class="sidebar">
+        <div class="logo">
+          <i class="bx bx-menu menu-icon" style="color: #6c7293"></i>
+          <span style="color: white" class="logo-name">BIRDPEE</span>
+        </div>
+
+        <div class="sidebar-content">
+          <ul class="lists">
+            <li class="list">
+              <a href="AdminServlet?type=view" class="nav-link active">
+                <i class="bx bxs-spreadsheet icon"></i>
+                <span class="link">DASHBOARD</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="feedbackmanagement.html" class="nav-link">
+                <i class="bx bxs-comment icon"></i>
+                <span class="link">PRODUCT MANAGEMENT</span>
+              </a>
+            </li>
+
+            <li class="list">
+              <a href="../homepage.html" class="nav-link">
+                <i class="bx bx-log-out icon"></i>
+                <span class="link">LOGOUT</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <main>
+      <h1 style="text-align: left; color: white; padding-top: 50px; padding-left: 30px;">DASHBOARD PAGE</h1>
+      <div class="cards">
+        <div class="card-single">
+          <div>
+            <h1>54</h1>
+            <span>messages</span>
+          </div>
+          <div>
+            <i class="fas fa-solid fa-message" style="color: green;"></i>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>54</h1>
+            <span>Customer</span>
+          </div>
+          <div>
+            <i class="fas fa-solid fa-user" style="color: green"></i>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>100</h1>
+            <span>Orders</span>
+          </div>
+          <div>
+            <i class="fas fa-solid fa-bag-shopping" style="color: green"></i>
+          </div>
+        </div>
+        <div class="card-single">
+          <div>
+            <h1>60$</h1>
+            <span>Income</span>
+          </div>
+          <div>
+            <i
+              class="fas fa-solid fa-money-bill-1-wave"
+              style="color: green"
+            ></i>
+          </div>
+        </div>
+      </div>
+      <div class="chart-place">
+        <div>
+          <canvas id="soldproduct" width="500" height="500"></canvas>
+        </div>
+        <div>
+          <canvas id="revenue" width="500" height="500"></canvas>
+        </div>
+      </div>
+
+      <div class="order-status">
+        <h1 style="color: white; margin: 70px 30px; margin-bottom: 30px;">Order Status</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>Account ID</td>
+              <td>Order ID</td>
+              <td>Cost</td>
+              <td>Payment Type</td>
+              <td>Create Date</td>
+              <td>Status</td>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr class="tr">
+              <td>S12345</td>
+              <td>O12345</td>
+              <td>12345$</td>
+              <td>asd@123</td>
+              <td>29/5/2023</td>
+              <td><div class="approve">Successful</div></td>
+            </tr>
+
+            <tr>
+              <td>S12345</td>
+              <td>O12345</td>
+              <td>12345$</td>
+              <td>asd@123</td>
+              <td>29/5/2023</td>
+              <td><div class="not-approve">Unsuccessful</div></td>
+            </tr>
+            <tr>
+              <td>S12345</td>
+              <td>O12345</td>
+              <td>12345$</td>
+              <td>asd@123</td>
+              <td>29/5/2023</td>
+              <td><div class="approve">Successful</div></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="feedback-place">
+        <h1 style="color: white; margin: 70px 30px; margin-bottom: 30px;">Feedback Management</h1>
+        <table>
+          <thead>
+            <tr>
+              <td>Feedback ID</td>
+              <td>Account ID</td>
+              <td>Product ID</td>
+              <td>Create Date</td>
+              <td>View Detail</td>
+            </tr>
+          </thead>
+          <tbody class="tbody">
+            <tr class="tr">
+              <td>F12345</td>
+              <td>A12345</td>
+              <td>P12345</td>
+              <td>29/5/2023</td>
+              <td><i class="fa-solid fa-eye"></i></td>
+            </tr>
+            <tr class="tr">
+              <td>F12345</td>
+              <td>A12345</td>
+              <td>P12345</td>
+              <td>29/5/2023</td>
+              <td><i class="fa-solid fa-eye"></i></td>
+            </tr>
+            <tr class="tr">
+              <td>F12345</td>
+              <td>A12345</td>
+              <td>P12345</td>
+              <td>29/5/2023</td>
+              <td><i class="fa-solid fa-eye"></i></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+
+    <section class="overlay"></section>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="../js/chart1.js"></script>
+    <script src="../js/chart2.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

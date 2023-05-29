@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/Checkout.css">
+    <link rel="icon" type="image/x-icon" href="images/logo2.png" />
+
+</head>
+
+<body>
+    <div class="justify">
+        <div class="logo1">
+            <i class="fa-solid fa-truck-fast"></i>
+        </div>
+        <div class="container">
+            <div class="title1">
+                <h1>SHIPPING DETAILS</h1>
+            </div>
+
+            <div class="name">
+                <p>FIRST NAME</p>
+                <P>LAST NAME</P>
+            </div>
+            <div class="inputName">
+                <input type="text" id="firstname" name="Firstname" value="">
+                <input type="text" id="lastname" name="Lastname" value="">
+            </div>
+            <div class="street">
+                <p>STREET</p>
+
+            </div>
+            <div class="inputStreet">
+                <input type="text" id="street" name="Street" value="">
+            </div>
+            <div class="address">
+                <p class="cityAddress">CITY</p>
+                <p class="stateAddress">STATE</p>
+                <p class="zipAddress">ZIP</p>
+
+            </div>
+            <div class="inputAddress">
+                <div class="City"> <input type="text" id="City" name="City" value=""></div>
+                <div class="State"> <input type="text" id="State" name="State" value=""></div>
+                <div class="Zip"><input type="text" id="Zip" name="Zip" value=""></div>
+            </div>
+            <h1>PAYMENT DETAILS</h1>
+            <div class="payment">
+
+                <p>PAYMENT METHOD</p>
+            </div>
+            <div class="paymentOption">
+                <select name="method" id="methods">
+                    <option value="visa">Visa</option>
+                    <option value="mastercard">MasterCard</option>
+                    <option value="COD">Cash on delivery</option>
+                    <option value="netbanking">netbanking</option>
+                </select>
+            </div>
+            <div class="button">
+                <div class="backCart">
+                    <button type="submit">BACK TO CART</button>
+                </div>
+
+                <div class="purchase">
+                    <button type="submit">PURCHASE</button>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="logo2">
+            <i class="fa-sharp fa-regular fa-credit-card"></i>
+        </div>
+        
+    </div>
+
+
+
+</body>
+
+</html>

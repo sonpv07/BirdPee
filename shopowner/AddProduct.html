@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/AddProduct.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/x-icon" href="../images/logo2.png" />
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-user-gear"></i>
+        </div>
+        
+        <h1>Add product</h1>
+    </header>
+    <main>
+        <div class="container">
+            <aside>
+                <h2>Main Menu</h2>
+                <a href="#"><i class="fa-solid fa-gear"></i>View dashboard</a>
+                <a href="#"><i class="fa-solid fa-gear"></i>Add product</a>
+                <a href="#"><i class="fa-solid fa-gear"></i>View shop</a>
+            </aside>
+            <section class="mainInput">
+                <h2>Details</h2>
+                <div class="inputID">
+                    <p>Enter productID</p>
+                    <input type="text" name="productid" id="productid" />
+                </div>
+                <div class="inputProductName">
+                    <p>Product's Name</p>
+                    <input type="text" name="productname" id="productname" />
+                </div>
+                <div class="inputIMG">
+                    <p>Add your product Image</p>
+                    <input type="file" name="imgfile" id="imgfile" />
+                </div>
+                <div class="inputInfo">
+                    <p>Enter product's info</p>
+                    <input type="text" name="productinfo" id="productinfo" />
+                </div>
+                <div class="inputQuantity">
+                    <p>Enter product's quantity</p>
+                    <input type="number" name="productquantity" id="producquantity" />
+                </div>
+                <div class="inputPrice">
+                    <p>Enter product's price</p>
+                    <input type="number" min="0.00" max="10000.00" step="0.01" name="productprice" id="productprice" />
+                </div>
+                <div class="categories">
+                    <p>Categories</p>
+                    <select name="method" id="methods">
+                        <option value="bird">Bird</option>
+                        <option value="food">Food</option>
+                        <option value="medicine">Medicine</option>
+                        <option value="accessory">Accessory</option>
+                    </select>
+                </div>
+                <div class="freeship">
+                    <p>Freeship</p>
+                    <input type="checkbox" id="freeship" name="freeship" value="Freeship">
+                </div>
+                <div class="button">
+                    <button type="submit">BACK</button>
+                    <button class="add" type="submit">ADD PRODUCT</button>
+                </div>
+
+            </section>
+        </div>
+
+    </main>
+</body>
+
+</html>
