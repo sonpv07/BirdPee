@@ -2,7 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -92,6 +92,10 @@ header .header__icon ul {
   justify-content: space-around;
 }
 
+header .header__icon ul a {
+  width: 150px;
+}
+
 header .header__icon ul li .header__icon_circle {
   width: 50px;
   height: 50px;
@@ -99,10 +103,11 @@ header .header__icon ul li .header__icon_circle {
   border-radius: 50%;
   position: relative;
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 header .header__icon ul li .shopping-bag,
-header .header__icon ul li .noti {
+header .header__icon ul li .noti  {
   position: relative;
 }
 
@@ -193,6 +198,7 @@ main .main__category .main__category_container img {
 main .main__category .main__category_container h4 {
   padding: 10px 0;
 }
+
 main .main__category .main__category_container .column .item:hover {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
   transform: scale(1.03);
@@ -220,7 +226,7 @@ main .main__hot-seller .main__hot-seller_container .column .item h5 {
 
 main .main__discount .main__discount_container .column .item .name-text,
 main .main__hot-seller .main__hot-seller_container .column .item .name-text {
-  width: 78%;
+  width: 100%;
   line-height: 20px;
   padding: 10px 0;
   padding-bottom: 8px;
